@@ -31,3 +31,6 @@ Route::get('/listings/{id}', function ($id) {
         "listing" => Listing::find($id),
     ]);
 });
+
+
+Route::get('/posts', 'PostController@index')->name('posts.index');
